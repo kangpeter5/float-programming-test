@@ -23,18 +23,18 @@
 module.exports = ( input ) => {
 	var count = 0;
 	var res = input.split('');
+	var thisLen = res.length;
 
-	for (var i = 0; i < res.length; i++) {
-		if(res[i]=="("){
+	for (var i = 0; i < thisLen; i++) {
+		if(res[i]=="(") {
 			count++;
 		}
-		if(res[i]==")"){
+		if(res[i]==")") {
 			count--;
 		}
-	}
-	if (count==0) {
+	} if (count==0) {
 		console.log(true);
-	}else{
+	} else {
         console.log(false);
 	}
 };
