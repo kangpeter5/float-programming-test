@@ -17,5 +17,20 @@
  * 
  */
 module.exports = ( length ) => {
-
+	var arr =[];
+	for (var i = 0; i <= length; i++) {
+		if (i%3===0) 
+		{
+			arr.push('fizz');
+		}
+		else if(i%5===0)
+		{
+			arr.push('buzz');
+		}
+		else
+		{
+			arr.push(i);
+		}
+	}
+	console.log(arr);
 };
